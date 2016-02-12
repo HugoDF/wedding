@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Our wedding...</title>
+    <meta name="author" content="Name and Name">
+    <meta name="description" content="Our wedding ...">
+    <meta name="keywords" content="name, name, wedding, date">
+    <style type="text/css">
+      body{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin: 0;
+      }
+      h1, h2{
+        font-weight: normal;
+        margin-bottom: 2em;
+      }
+      h1{
+        font-family: 'Montserrat'
+        border-bottom: solid 2px;
+        display: inline-block;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      p{
+        line-height: 2em;
+        margin: auto;
+        margin-bottom: 2em;
+        max-width: 800px;
+      }
+      a, a:hover, a:focus, a:visited{
+        color: inherit;
+      }
+      a:hover{
+        color: #999;
+      }
+      .container{
+        margin: auto;
+        max-width: 1000px;
+      }
+      .section{
+        padding-top: 200px;
+        margin-bottom: 200px;
+      }
+      .subsection{
+        margin-bottom: 10em;
+      }
+      .button{
+        color: white;
+        text-decoration: none;
+        border: solid 2px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .button:hover{
+        background-color: white;
+        color: black;
+        border-color: white;
+      }
+      .hero-section{
+        background-image: url('img/wedding.jpg');
+        display: inline-block;
+        width: 100%;
+        background-size: cover;
+        color: white;
+        position: relative;
+        background-position: 50% 10%;
+      }
+      .hero-section::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        left: 0;
+        z-index: 0;
+      }
+      .hero-content{
+        position: relative;
+        z-index: 10;
+      }
+      @media screen and (min-width: 768px){
+        .three-column{
+          width: 33%;
+          float: left;
+        }
+        .inner{
+          padding: 10px;
+        }
+      }
+      .three-column-container{
+        display: inline-block;
+        width: 100%;
+      }
+      .travel-section-hero{
+        background-image: url("img/travel-accommodation.jpg");
+        background-size: cover;
+        background-position: center;
+        display: table;
+        color: white;
+        width: 100%;
+        height: 600px;
+        position: relative;
+      }
+      .travel-section-hero::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        left: 0;
+        z-index: 0;
+      }
+      .travel-section-heading{
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        z-index: 10;
+      }
+      .todo-section-hero{
+        background-image: url("img/prewedding-todo.jpg");
+        background-size: cover;
+        background-position: center;
+        display: table;
+        color: white;
+        width: 100%;
+        height: 600px;
+        position: relative;
+      }
+      .todo-section-hero::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        left: 0;
+        z-index: 0;
+      }
+      .todo-section-heading{
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        z-index: 10;
+      }
+      .subsection-heading{
+        font-size: 25px;
+        font-style: italic;
+        margin-bottom: 150px;
+      }
+      table{
+        border: solid 2px black;
+        margin-top: 100px;
+      }
+      td{
+        padding: 20px;
+      }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-content section">
+          <h1>Wedding Weekend</h1>
+          <div class="subsection">
+            <h2>Wedding day</h2>
+            <p>Our wedding ceremony will be held on July 17th at Agioi Anargyroi Church in Portaria Pelio at 6pm.</p>
+            <p>After the ceremony, dinner and party will follow at La Veranda Bar Restaurant.</p>
+            <p>Your presence will make our day even more special! <a class="typeform-share link" href="https://hugodf.typeform.com/to/EMRwtg" data-mode="1" target="_blank">Please RSVP here.</a></p>
+            <p><a class="typeform-share button link" href="https://hugodf.typeform.com/to/EMRwtg" data-mode="1" target="_blank">RSVP HERE</a></p>
+          </div>
+          <div class="subsection">
+            <h2>Pre-wedding party</h2>
+            <p>There will be a pre-wedding party on Saturday, the day before the wedding. We can’t share any detailed information at this point other than you better have a swimming suit with you and it will go on from late morning until the evening!!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-section">
+      <div class="travel-section-hero">
+        <h1 class="travel-section-heading">Travel and accommodation</h1>
+      </div>
+      <div class="container">
+        <div class="section">
+          <h1 class="subsection-heading">Travel</h1>
+          <div class="subsection">
+            <h2>Plane</h2>
+            <p>If you are flying from abroad your best options are Thessaloniki Makedonia Airport (SKG) and Skiathos Airport (JSI). You can find flights to Thessaloniki from most major European cities. Easyjet and Ryanair have direct flights from London, Manchester, Paris (Beauvais), Brussels (Charleroi), and Warsaw (Modlin). Once you arrive in Thessaloniki you can travel to Pelion by car , bus or train.</p>
+            <p>If you wish to combine your time in Greece with a visit to beautiful Sporades why not fly directly to Skiathos? Airberlin, Transavia, Thomas Cook, and Monarch airlines might offer convenient flights. Very close to the airport you will find Skiathos’ port. From there you can take the ferry to Volos (duration and price vary). It is a 15 minutes drive from Volos to Portaria (a taxi ride should cost approximately €…).</p>
+            <p>If you wish to fly to other Greek airports or you are not able to find convenient flights from your city let us know and we will try our best to help with your search.</p>
+          </div>
+          <div class="three-column-container">
+            <div class="subsection three-column">
+              <div class="inner">
+                <h2>Car</h2>
+                <p>Avis, Hertz and Sixt rental companies operate in various locations in Thessaloniki including the airport. It is a 2.5 hours drive from Thessaloniki to Portaria.</p>
+                <p>Alternatively, you can car pool with some of our other guests. Please let us know via e-mail if you are interested in that option.</p>
+              </div>
+            </div>
+            
+            <div class="subsection three-column">
+              <div class="inner">
+                <h2>Bus</h2>
+                <p>There are several buses a day from Thessaloniki to Volos. The bus ride from Thessaloniki lasts approximately 2.5 hours. For timetables and fares visit Thessaloniki Bus (Coach) Station’s website here.</p>
+                <p>If you arrive to Thessaloniki by plane bus No 78 will take you directly from the airport to the bus station.</p>
+              </div>
+            </div>
+            
+            <div class="subsection three-column">
+              <div class="inner">
+                <h2>Train</h2>
+                <p>The train takes between 2 and 3 hours from Thessaloniki to Volos. For timetables and fares from Thessaloniki or other cities visit the TrainOSE website here.</p>
+                <p>If you arrive to Thessaloniki by plane bus No 78 will take you directly from the airport to the train station.</p>
+              </div>
+            </div>
+          </div>
+          <div class="subsection">
+            <h1 class="subsection-heading">Accommodation</h1>
+            <p>We have pre-reserved some rooms for you in the following hotels, but please do feel free to choose any other hotel of your preference. If you have a car you could also consider other nearby villages or even Volos.</p>
+            <p>Quoted Prices are per double room, per night. In Kritsa Hotel, Pilion Terra and Xenia you could also find triples and quad rooms. To book with one of the following hotels, e-mail your dates and preferred room type quoting “for Panos and Fani’s wedding, on the 17th of July.” </p>
+
+            <table>
+              <thead>
+                <td>Hotel</td>
+                <td>€</td>
+                <td>Comments</td>
+                <td>Website</td>
+                <td>E-mail</td>
+              </thead>
+              <tr>
+                <td>Anna’s House</td>
+                <td>≤€50</td>
+                <td>5 bedroom house next to the venue, ideal for  group booking</td>
+                <td><a href="http://www.annashome.gr">www.annashome.gr</a></td>
+                <td><a href="mailto:info@annashome.gr">info@annashome.gr</a></td>
+              </tr>
+              <tr>
+                <td>Filokalia</td>
+                <td>≤€50</td>
+                <td>less than 5 minutes walk from the venue.</td>
+                <td><a href="http://www.filokaliaportaria.com">www.filokaliaportaria.com</a></td>
+                <td><a href="mailto:info@filokaliaportaria.com">info@filokaliaportaria.com</a></td>
+              </tr>
+              <tr>
+                <td>Country House Triantafillies</td>
+                <td>≤€60</td>  
+                <td>10 minutes walk from the venue…but still pretty close ☺</td>
+                <td><a href="http://www.triantafillies.gr">www.triantafillies.gr</a></td>
+                <td><a href="mailto:info@triantafillies.gr">info@triantafillies.gr</a></td>
+              </tr>
+              <tr>
+                <td>Kritsa Hotel</td>
+                <td>varies</td>
+                <td>on the village square; the food is really good!</td> 
+                <td><a href="http://www.hotel-kritsa.gr">www.hotel-kritsa.gr</a></td>
+                <td><a href="mailto:info@hotel-kritsa.gr">info@hotel-kritsa.gr</a></td>
+              </tr>
+              <tr>
+                <td>Pilion Terra Hotel</td> 
+                <td>≤€70</td>
+                <td>you will need a car for this one, even though it is only a 5 minutes drive.</td>
+                <td><a href="http://www.terra-hotel-pelion.com">www.terra-hotel-pelion.com</a></td>
+                <td><a href="mailto:info@pilionterra.gr">info@pilionterra.gr</a></td>
+              </tr>
+              <tr>
+                <td>Xenia</td>
+                <td>≤€80</td>
+                <td>the reception venue… drink as much as you want!</td>
+                <td><a href="http://www.xeniaportarias.gr">www.xeniaportarias.gr</a></td>
+                <td><a href="mailto:info@xeniaportarias.gr">info@xeniaportarias.gr</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="todo-section-hero">
+      <div class="todo-section-heading">
+        <h1>Things to do</h1>
+        <p>We know that many of you will be travelling long distance to come to Pelion. We are very much thankful for this and we are excited to see you there!!!</p>
+        <p>If you decide to combine our wedding with some extra days of vacations, Greece offers endless choices. Here are some that are close to our wedding destination…</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="subsection">
+          <h2>Pelion</h2>
+          <p>Mount Pelion is a place of immense beauty and variety. It is by no chance that is was chosen as the summer house of the Greek Olympian Gods! You can spend half your days hiking and exploring the beautiful small villages along with the local cuisine; and the other half sunbathing and in one of the many beaches to the east or the west of Pelion. We hope that our wedding activities will give you a small taste of both but if you want more, the link below might give you some ideas.</p>
+          <p><a href="http://www.discoverpelio.com">www.discoverpelio.com</a></p>
+          <p>If you are interested in activities such as cooking lessons, sailing, canoe kayaking, trekking, horse riding, biking, scuba diving, and canoeing, contact our cool wedding planner, Eleni, through her website <a href="http://www.whatifexperiences.com">www.whatifexperiences.com</a></p>
+          <p>If again you are more of the lazy type, the following link might be more interesting <a href="http://www.trainose.gr/en/tourism-culture/train-and-recreation/the-pelion-train/">www.trainose.gr/en/tourism-culture/train-and-recreation/the-pelion-train/</a></p>
+          <p>On your way to Pelion, don’t forget to stop in Volos to grab a bite and drink some tsipouro!</p>
+        </div>
+        <div class="subsection">
+          <h2>Sporades</h2>
+          <p>Sporades is a complex of islands in north Aegean sea, very easily accessible from Volos by ferry. Skiathos and Skopelos are the more visited among the islands, and while they are not the typical white-and-blue Cyclades islands they are surrounded by crystal blue seas and stunning natural sceneries. If the idea of spending some days in Sporades sounds tempting a look at photos of Lalaria beach in Skiathos and Agios Ioannis chapel in skopelos will seal the deal!</p>
+          <p><a href="http://skiathosisland.com/en">skiathosisland.com/en</a></p>
+          <p><a href="http://skopelosweb.gr/en">skopelosweb.gr/en</a></p>
+        </div>
+        <div class="subsection">
+          <h2>Thessaloniki</h2>
+          <p>It’s not because it is our home city that we suggest to take a few days to explore it if you travel through Thessaloniki. Thessaloniki has been repeatedly named as a top European party destination and Financial Times FDI magazine has included it in its list of European cities of the future for human capital and lifestyle!</p>
+          <p>Walk on the quay and have coffee gazing at the golf of Thermaikos. Visit the old city and its walls, the recently reopened Rotunda, and the Modiano market. Visit the church of Saint Demetrios and the Archaeological or the Byzantine museum, or both! Have dinner at Ladadika. And then have drinks in one of the many cafés/bars on Metropoleos street or Proksenou Koromila street. Or even better at Aigli behind the Saint Demetrios church. Or Shark on the east. Or Villa Luna in the Panorama district. Or anywhere it feels inviting! We could go on forever…</p>
+          <p><a href="http://www.thessaloniki.gr/portal/page/portal/EnglishPage/Traveling-to-Thessaloniki/10-Reasons-to-visit-Thessaloniki">www.thessaloniki.gr/portal/page/portal/EnglishPage/Traveling-to-Thessaloniki/10-Reasons-to-visit-Thessaloniki</a></p>
+          <p>If you do decide to visit Thessaloniki, let us know and if we* are not getting crazy about the last details of the wedding we will happily be your guides!</p>
+          <p>And one last thing…if you have more than a couple of days, visit Halkidiki for some of its beaches really worth it!!!</p>
+          <p><a href="http://www.visit-halkidiki.gr/">www.visit-halkidiki.gr/</a></p>
+          <p>* By we here we mean Fani; Pano’s will most likely jump to the chance to do something else other than preparing for the wedding!</p>
+        </div>
+        <div class="subsection">
+          <h2>Meteora</h2>
+          <p>Meteora is an area of high natural and religious importance that is included in the UNESCO World Heritage List. A set of immense rocks, split by earthquakes and weathered by water and wind over millions of years, are combined to create a breathtaking landscape. On top of those rocks today reside 24 monasteries, some of which date back to the 14th century.</p>
+          <p><a href="http://www.meteora-greece.com">www.meteora-greece.com</a></p>
+          <p>Meteora is less than 2 hours drive from Volos and can also be reached by train even though the journey in that case might be much longer. If you take the train, get off in Kalampaka and then travel by taxi or feet.</p>
+        </div>
+      </div>
+    </div>
+    <img src="img/save-the-date.jpg">
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+  </body>
+</html>
