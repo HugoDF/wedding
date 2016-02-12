@@ -1,0 +1,191 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+h1, h2{
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+h1{
+  font-family: 'Montserrat'
+  border-bottom: solid 2px;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+p{
+  line-height: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: 80%;
+  word-break: break-word;
+}
+@media screen and (max-width: 768px){
+  nav{
+    font-size: 15px;
+  }
+  .nav-inner{
+    padding: 10px;
+    line-height: 2em;
+  }
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  color: #4fb0ae;
+  font-size: 20px;
+}
+.nav-inner{
+  display: inline-block;
+  background: rgba(0,0,0,.5);
+  padding: 10px 50px; 
+}
+.nav-link{
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-link:not(:last-child){
+  margin-right: 10px;
+}
+.nav-link.active, .nav-link:hover{
+  text-decoration: underline;
+}
+a, a:hover, a:focus, a:visited{
+  color: #4fb0ae;
+}
+a:hover{
+  color: teal;
+}
+.container{
+  margin: auto;
+  max-width: 1000px;
+}
+@media screen and (min-width: 768px){
+  .section{
+    padding-top: 200px;
+    margin-bottom: 200px;
+  }
+  .subsection{
+    margin-bottom: 10em;
+  }
+}
+.button{
+  color: white;
+  background-color: #4fb0ae;
+  text-decoration: none;
+  border: solid 2px #4fb0ae;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+.button:hover{
+  background-color: teal;
+  color: white;
+  border-color: teal;
+}
+.hero-section{
+  background-image: url("img/wedding.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  color: white;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.hero-section::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  left: 0;
+  z-index: 0;
+}
+.hero-content{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (min-width: 768px){
+  .three-column{
+    width: 33%;
+    float: left;
+  }
+  .inner{
+    padding: 10px;
+  }
+}
+.three-column-container{
+  display: inline-block;
+  width: 100%;
+}
+.travel-section-hero{
+  background-image: url("img/travel-accommodation.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  color: white;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.travel-section-hero::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  left: 0;
+  z-index: 0;
+}
+.travel-section-heading{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+}
+.todo-section-hero{
+  background-image: url("img/prewedding-todo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  color: white;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.todo-section-hero::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  left: 0;
+  z-index: 0;
+}
+.todo-section-heading{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+}
+.subsection-heading{
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 150px;
+}
+table{
+  border: solid 2px black;
+  margin-top: 100px;
+  max-width: 100%;
+  overflow: hidden;
+}
+td{
+  padding: 20px;
+}
