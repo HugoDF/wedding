@@ -33,7 +33,7 @@ nav{
 .nav-inner{
   display: inline-block;
   background: rgba(0,0,0,.5);
-  padding: 10px 50px; 
+  padding: 10px 50px;
 }
 .nav-link{
   display: inline-block;
@@ -72,14 +72,14 @@ a:hover{
 }
 @media screen and (min-width: 768px){
   .section{
-    padding-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 100px;
+    margin-bottom: 100px;
   }
   .subsection{
     margin-bottom: 10em;
   }
 }
-.button{
+.button, .button:active, .button:visited{
   color: white;
   background-color: #4fb0ae;
   text-decoration: none;
@@ -93,8 +93,11 @@ a:hover{
   color: white;
   border-color: teal;
 }
+.form-button{
+  margin-top: 6rem;
+}
 .hero-section{
-  background-image: url("img/wedding.jpg");
+  background-image: url("img/beach-1.jpg");
   background-size: cover;
   background-position: center;
   display: table;
@@ -108,7 +111,7 @@ a:hover{
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.1);
   left: 0;
   z-index: 0;
 }
@@ -131,6 +134,9 @@ a:hover{
   display: inline-block;
   width: 100%;
 }
+.travel-section .section{
+  margin-bottom: 0;
+}
 .travel-section-hero{
   background-image: url("img/travel-accommodation.jpg");
   background-size: cover;
@@ -151,6 +157,31 @@ a:hover{
   z-index: 0;
 }
 .travel-section-heading{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+}
+.accomodation-section-hero{
+  background-image: url("img/pool-landscape.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  color: white;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.accomodation-section-hero::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.3);
+  left: 0;
+  z-index: 0;
+}
+.accomodation-section-heading{
   display: table-cell;
   vertical-align: middle;
   position: relative;
