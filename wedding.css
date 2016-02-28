@@ -1,5 +1,5 @@
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -8,11 +8,14 @@ h1, h2{
   margin-bottom: 2em;
 }
 h1{
-  font-family: 'Montserrat'
-  border-bottom: solid 2px;
+  font-family: 'Nothing You Could Do';
   display: inline-block;
-  letter-spacing: 2px;
+  letter-spacing: .5em;
   text-transform: uppercase;
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
 }
 p{
   line-height: 2em;
@@ -94,10 +97,10 @@ a:hover{
   border-color: teal;
 }
 .form-button{
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 .hero-section{
-  background-image: url("img/beach-1.jpg");
+  background-image: url("img/wedding.jpg");
   background-size: cover;
   background-position: center;
   display: table;
@@ -111,7 +114,7 @@ a:hover{
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0,0,0,.1);
+  background: rgba(0,0,0,.3);
   left: 0;
   z-index: 0;
 }
@@ -120,6 +123,9 @@ a:hover{
   vertical-align: middle;
   position: relative;
   z-index: 10;
+}
+.hero-heading{
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px){
   .three-column{
@@ -197,12 +203,15 @@ a:hover{
   height: 600px;
   position: relative;
 }
+.todo-section-heading h1{
+    margin: 0;
+}
 .todo-section-hero::before{
   content: "";
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.1);
   left: 0;
   z-index: 0;
 }
