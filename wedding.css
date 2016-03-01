@@ -243,3 +243,18 @@ table{
 td{
   padding: 20px;
 }
+.copyright{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.copyright.home{
+    margin-top: -30px;
+    margin-right: 20px;
+    text-align: right;
+}
+.copyright.home > .copyright-link{
+    color: white!important;
+}
+.copyright-link{
+    text-decoration: none!important;
+}
